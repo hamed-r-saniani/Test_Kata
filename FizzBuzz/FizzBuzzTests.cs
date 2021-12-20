@@ -4,6 +4,9 @@ namespace FizzBuzz
 {
     public class FizzBuzzTests
     {
+        private const string fizz = "Fizz";
+        private const string buzz = "Buzz";
+
         [Fact]
         public void Start_ShouldReturnAListWithGivenRoundLength()
         {
@@ -13,35 +16,19 @@ namespace FizzBuzz
 
             Assert.Equal(rounds, actual.Count);
         }
-        [Fact]
-        public void Start_ShouldReturnAListWithProperFizzValues()
+        
+        [Theory]
+        [InlineData(444,fizz,2)]
+        [InlineData(444,fizz,8)]
+        [InlineData(444,buzz,4)]
+        [InlineData(444,buzz,9)]
+        [InlineData(444,fizz+buzz,14)]
+        [InlineData(444,fizz+buzz,29)]
+        public void Start_ShouldReturnAListWithProperAtGivenElements(int rounds,string expected,int index)
         {
-            const int rounds = 444;
-
             var actual = FizzBuzz.Start(rounds);
 
-            Assert.Equal("Fizz", actual[2]);
-            Assert.Equal("Fizz", actual[8]);
-        }
-        [Fact]
-        public void Start_ShouldReturnAListWithProperBuzzValues()
-        {
-            const int rounds = 444;
-
-            var actual = FizzBuzz.Start(rounds);
-
-            Assert.Equal("Buzz", actual[4]);
-            Assert.Equal("Buzz", actual[9]);
-        }
-        [Fact]
-        public void Start_ShouldReturnAListWithProperFizzBuzzValues()
-        {
-            const int rounds = 444;
-
-            var actual = FizzBuzz.Start(rounds);
-
-            Assert.Equal("FizzBuzz", actual[14]);
-            Assert.Equal("FizzBuzz", actual[29]);
+            Assert.Equal(expected, actual[index]);
         }
     }
 }
