@@ -1,0 +1,7 @@
+Automatic Concurrent Testing for Visual Studio
+
+NCrunch is a fully automated testing extension, engineered to make coding and testing a breeze.
+Forget about stopping to run your tests and let NCrunch do the work for you.
+Code and test at the speed you think! 
+
+https://www.ncrunch.net/

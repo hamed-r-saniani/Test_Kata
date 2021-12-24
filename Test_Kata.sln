@@ -7,9 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenOrOdd", "EvenOrOdd\Even
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{D528415B-98D3-4CF0-B1BA-A2AA8970EB3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenOrOddTDD", "EvenOrOddTDD\EvenOrOddTDD.csproj", "{8C2CB4CB-4D08-46A8-AC44-1BF8B3F14796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenOrOddTDD", "EvenOrOddTDD\EvenOrOddTDD.csproj", "{8C2CB4CB-4D08-46A8-AC44-1BF8B3F14796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzTDD", "FizzBuzzTDD\FizzBuzzTDD.csproj", "{8C1C0AC8-AFA4-4D68-9388-9A0C8D2AA864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzzTDD", "FizzBuzzTDD\FizzBuzzTDD.csproj", "{8C1C0AC8-AFA4-4D68-9388-9A0C8D2AA864}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E37508D-2A46-4DB8-B1B1-DDFC5865A14E}"
+	ProjectSection(SolutionItems) = preProject
+		NChrunch.txt = NChrunch.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
